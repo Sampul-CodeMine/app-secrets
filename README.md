@@ -17,7 +17,6 @@ From this project, users will have little "Logged Out Experience" and the routes
 To develop this application, we have to state some tools that will be used for the software development:
 
 - Django
-- SQLAlchemy
 - MySQL DBMS
 - Bootstrap CSS library
 - JQuery JavaScript library
