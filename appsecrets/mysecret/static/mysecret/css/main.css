@@ -1,0 +1,55 @@
+body {
+    padding-top: 50px;
+}
+.jumbotron {
+    background: url('../imgs/secrets_jumbotron.jpg') no-repeat center;
+}
+.jumbotron h1 {
+    color: #440c40;
+    font-weight: 500;
+}
+.jumbotron p{
+    color: #573518;
+    font-weight: bold;
+}
+.jumbotron div#msg {
+    padding: 20px;
+    border-radius: 30px;
+}
+.jumbotron div#msg p {
+    color:#2a2206
+}
+.btn-secondary {
+    background-color: transparent;
+    border-color: rgb(216, 105, 36);
+    color: rgb(216, 105, 36);
+}
+#logo-img {
+    width: 50px;
+}
+span#red-logo, span#blue-logo {
+    font-weight: bold;
+    font-style: italics;
+}
+span#blue-logo {
+    color: rgb(48, 65, 80);
+}
+span#red-logo {
+    color: rgb(216, 105, 36);
+}
+.social-icon {
+    color: rgb(216, 105, 36);
+}
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
