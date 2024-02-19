@@ -1,9 +1,6 @@
-{% extends 'mysecret/base.html' %}
 {% load static %}
-{% block content %}
-{% include 'mysecret/includes/navigation.html' %}
         <!-- Contact section starts here -->
-        <section class="container py-4 mt-4 mb-4" id="contact">
+        <section class="container py-4 mt-4" id="contact">
             <h2 class="display-4 text-center pb-4 my-4">Get in touch with us today!</h2>
             <div class="row justify-content-center">
                 <div class="col-md-9">
@@ -26,28 +23,12 @@
                                 <li><a href="https://wa.me/2348022541174" target="_blank" class="fab fa-whatsapp social-icon"> WhatsApp</a></li=>
                             </ul>
                         </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary btn-lg mb-4" role="button">Contact &raquo;</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4 mb-4">
-                <div class="col-md-6 offset-md-3">
-                    <form method="post">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Your Name</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Your Email</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
+                {% block content%}{% endblock %}
             </div>
         </section>
         <!-- Contact section stops here  -->
-{% endblock %}

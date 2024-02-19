@@ -1,0 +1,24 @@
+{% extends 'mysecret/base.html' %}
+{% load static %}
+{% block content %}
+{% include 'mysecret/includes/navigation.html' %}
+        <!-- About section starts here -->
+        <section id="about" class="container mt-4 pt-4">
+            <h2 class="display-4 text-center mt-4 mb-3">About</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-4 pt-4"> <img src="{% static 'mysecret/imgs/secrets.jpg' %}" alt="Design" class="card-img-top img-fluid"></div>
+                <div class="col-md-6 mb-4 pt-4">
+                    <div class="card mb-4">
+                        <div class="card-body">                            
+                            <p class="card-text">Everyone has something they have done, are presently doing or participating in, or will do in a future scheduled time: “SECRETS” – This is what it is called.</p>
+                            <p><span id="blue-logo">app</span><span id="red-logo">Secrets</span> can help you manage your secrets which spans from scopes/topics to personal feelings, plans, surprises, or even information with broader implications.</p>
+                            <p>I have always loved to do things simple but fun. I did not have the neccessary or prerequisite technical strength to bring this to limelight. As a passionate and inquisiitve person, I stumbled into this programme <strong>ALX SE Programme</strong> and I took interest and detailed exploration of the different concepts that were taught unto us.</p>
+                            <p>I know that it is not safe to keep personal secrets or conceal vital/detailed information of one's self on a remote and online repository but I would love to have some of my secrets not neccessarily deep secrets/plans but some of my simple plans, schedules, secrets concealed online.</p>
+                            <p>With the requirements to fulfill the graduation from the Foundational phase of the ALX Software Engineering Programme to the Specialized classes or phase, I had to bring out this fun app to show a little of what I have learned in the programme so far. One day in the next future, people can as well leave clues to their most hidden secrets online.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About section stops here  -->
+{% endblock %}
