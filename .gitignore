@@ -1,3 +1,5 @@
-*.env
-*/.secrets/*
-*/__pycache__/*
+appsecrets/.env
+appsecrets/.secrets/*
+appsecrets/__pycache__/*
+appsecrets/**/__pycache__/*
+appsecrets/**/**/__pycache__/*

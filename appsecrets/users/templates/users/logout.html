@@ -1,0 +1,21 @@
+{% extends 'mysecret/base.html' %}
+{% load static %}
+{% block content %}
+{% include 'mysecret/includes/navigation.html' %}
+    <!-- Page wrapper starts here -->
+    <main role="main" id="wrapper" class="wrapper mb-4 mt-4">
+
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h2 class="pt-3">
+                        You have been logged out!
+                    </h2>
+                    <a class="ml-3" href="{% url 'sign_in' %}">You can Login Here</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Page wrapper stops here -->
+{% endblock %}

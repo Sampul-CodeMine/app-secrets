@@ -3,14 +3,14 @@
         <section class="container py-4 mt-4" id="contact">
             <h2 class="display-4 text-center pb-4 my-4">Get in touch with us today!</h2>
             <div class="row justify-content-center">
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <div class="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.233731289366!2d6.700173274737293!3d6.232888993755291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1043f3b1c4bd5f93%3A0xa004853a258660b1!2sQubes%20Hotel%20and%20Suites%20Asaba!5e0!3m2!1sen!2sng!4v1708076203263!5m2!1sen!2sng" frameborder="0" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="card justify-content-center">
-                        <img src="{% static 'mysecret/imgs/default.png' %}" class="card-img-top rounded-circle img-fluid" alt="Dukeson">
+                        <img src="{% static 'mysecret/imgs/female.jpg' %}" class="card-img-top rounded-circle img-fluid" alt="Dukeson">
                         <div class="card-body">
                             <h5 class="card-title">Dukeson Ehigboria</h5>
                             <p class="card-text">Send a message or ask your questions and we will get back to you as soon as possible.</p>
@@ -24,7 +24,7 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-secondary btn-lg mb-4" role="button">Contact &raquo;</a>
+                            <a href="{% url 'contact_page' %}" class="btn btn-secondary btn-lg mb-4" role="button">Contact &raquo;</a>
                         </div>
                     </div>
                 </div>

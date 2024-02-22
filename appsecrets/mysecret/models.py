@@ -1,3 +1,28 @@
+#!/usr/bin/python3
+"""
+This is a Script to define the database models
+"""
 from django.db import models
+"""
+This is a module to define the Secrets table in the database
+"""
+from django.urls import reverse
+from django.utils import timezone
+from django.contrib.auth.models import User
+import uuid as uid
 
-# Create your models here.
+
+class Secret(models.Model):
+    """
+    This is the Secrets models to develop the secrets table in the database.
+    It inherits from the Django models
+    """
+    secret_id = models.UUIDField(primary_key=True, default=uid.uuid4, editable=False)
+    sec_user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    secret_title = models.CharField(max_length=120)
+    secret_content = models.TextField()
+    date_created = models.DateTimeField(default=timezone.now)
+    date_modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Secret {self.secret_id} ({self.title})"
