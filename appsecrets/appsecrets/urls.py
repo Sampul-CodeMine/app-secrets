@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from users import views as user_views
 from django.contrib.auth import views as auth_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mysecret.urls')),
@@ -29,6 +30,11 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout_user'),
     path('home/', user_views.profile_home, name='profile_page'),
     path('profile/', user_views.profile_details, name='profile_details'),
+    path('secrets/new/', user_views.new_secret, name='new_secret'),
+    path('secrets/<str:sid>/', user_views.secret_details, name='secret_details'),
+    path('secrets/<str:sid>/update/', user_views.secret_update, name='secret_update'),
+    path('secrets/<str:sid>/delete/', user_views.confirm_secret_delete, name='confirm_secret_delete'),
+    path('delete/<str:sid>/', user_views.delete_secret, name='delete_secret'),
 ]
 
 if settings.DEBUG:

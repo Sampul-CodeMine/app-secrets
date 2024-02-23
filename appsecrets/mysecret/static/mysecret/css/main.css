@@ -37,6 +37,11 @@ span#blue-logo {
 span#red-logo {
     color: rgb(216, 105, 36);
 }
+span#delete_secret {
+    font-style: italic;
+    font-weight: bold;
+    color: crimson;
+}
 #wrapper {
     display: block;
     margin-top: 2rem !important;
@@ -75,6 +80,6 @@ span#red-logo {
 .account-heading {
     font-size: 2.5rem;
 }
-textarea#content, textarea#message {
-    resize: none;
+textarea, textarea#content, textarea#message {
+    resize: none !important;
 }

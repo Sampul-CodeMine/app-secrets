@@ -5,6 +5,7 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import Profile
+from mysecret.models import Secret
 
 
 class UserRegistrationForm(UserCreationForm):
@@ -48,3 +49,10 @@ class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields =  ['avatar']
+
+
+class NewSecretForm(forms.ModelForm):
+    class Meta:
+        model = Secret
+        fields = ['secret_title', 'secret_content']
+        exclude = ['secret_id']

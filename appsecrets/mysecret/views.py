@@ -33,34 +33,3 @@ def contact_page(request):
         'title': 'Contact'
     }
     return render(request, 'mysecret/contact.html', context)
-
-
-def profile_page(request):
-    """
-    This is the view to display the logged in users profile
-    """
-    context = {
-        'title': 'Profile',
-        'secrets': Secret.objects.all()
-    }
-    return render(request, 'mysecret/profile.html', context)
-
-
-def sign_up(request):
-    """
-    This is the view to display the Registration page for new users
-    """
-    context = {
-    'title': 'Sign Up'
-    }
-    return render(request, 'mysecret/register.html', context)
-
-
-def sign_in(request):
-    """
-    This is the view to display the Login page for old users
-    """
-    context = {
-    'title': 'Sign In'
-    }
-    return render(request, 'mysecret/login.html', context)

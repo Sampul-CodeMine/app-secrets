@@ -1,5 +1,7 @@
 appsecrets/.env
 appsecrets/.secrets/*
 appsecrets/__pycache__/*
-appsecrets/**/__pycache__/*
-appsecrets/**/**/__pycache__/*
+appsecrets/mysecret/__pycache__/*
+appsecrets/mysecret/migrations/__pycache__/*
+appsecrets/users/__pycache__/*
+appsecrets/users/migrations/__pycache__/*

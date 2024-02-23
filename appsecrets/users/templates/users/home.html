@@ -8,19 +8,55 @@
             {% include 'mysecret/includes/alerts.html' %}
             <div class="row">
                 <div class="col-md-8 offset-md-2 mb-4">
-                    {% for secret in secrets %}
-                    <article class="card mb-2">
-                        <img class="card-img-top rounded-circle img-fluid" src="{{ secret.author.profile.avatar.url }}" alt="Author Avatar" style="width: 80px;">
-                        <div class="card-header">
-                            <h2><a class="card-title" href="">{{ secret.secret_title|capfirst }}</a></h2>
-                            <a class="mr-2" href="">{{ secret.secret_user_id }}</a>
-                                <small class="text-muted">{{ secret.date_created|date:"F d, Y" }}</small>
-                        </div>
-                        <div class="card-body">                            
-                            <a class="btn btn-outline-warning btn-sm" href="">View</a>    
-                        </div>
-                    </article>
-                    {% endfor %}
+                    {% if secrets %}
+                        {% for secret in secrets %}
+                            <article class="card mb-2">
+                                <img class="card-img-top rounded-circle img-fluid" src="{{ secret.author.profile.avatar.url }}" alt="{{ secret.author.profile.username|capfirst }}'s' Avatar" style="width: 80px;">
+                                <div class="card-header">
+                                    <h2><a class="card-title" href="{% url 'secret_details' secret.secret_id %}">{{ secret.secret_title|capfirst }}</a></h2>
+                                    <a class="mr-2" href="">{{ secret.secret_user_id }}</a>
+                                        <small class="text-muted">{{ secret.date_created|date:"F d, Y" }}</small>
+                                </div>
+                                <div class="card-body">                            
+                                    <a class="btn btn-outline-warning btn-sm" href="{% url 'secret_details' secret.secret_id %}">View</a>    
+                                </div>
+                            </article>
+                            {% endfor %}
+                            <div class="paginator">
+                                <span class="step-links">
+                                    {% if secrets.has_previous %}
+                                        <a href="?page=1" class="btn btn-outline-info mb-4">First</a>
+                                        <a href="?page={{ secrets.previous_page_number }}" class="btn btn-outline-info mb-4"> &laquo;&laquo; </a>
+                                    {% endif %}
+                                    <span class="current">
+                                        {% for num in secrets.paginator.page_range %}
+                                            {% if secrets.number == num %}
+                                                <a href="?page={{ num }}" class="btn btn-outline-info mb-4">{{ num }}</a>
+                                            {% elif num > secrets.number|add:'-3' and num < secrets.number|add:'3' %}
+                                                <a href="?page={{ num }}" class="btn btn-outline-info mb-4">{{ num }}</a>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </span>
+                                    {% if secrets.has_next %}
+                                        <a class="btn btn-outline-info mb-4" href="?page={{ secrets.next_page_number }}"> &raquo;&raquo; </a>
+                                        <a class="btn btn-outline-info mb-4" href="?page={{ secrets.paginator.num_pages }}">Last</a>
+                                    {% endif %}
+                                </span>
+                            </div>
+                    {% else %}
+                        <article class="card mb-2">
+                            <img class="card-img-top rounded-circle img-fluid" src="{{ request.user.profile.avatar.url }}" alt="{{ request.user.username|capfirst }}'s' Avatar" style="width: 80px;">
+                            <div class="card-header text-center">
+                                <h2><p class="card-title lead">No Stored Secrets</p></h2>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-muted">You do not have any secrets registered in your profile yet. Click on New Secret from the menubar or the button below to add a new secret.</p>                            
+                            </div>
+                            <div class="card-footer">                            
+                                <a class="btn btn-outline-secondary btn-sm" href="{% url 'new_secret' %}">Add a New Secret</a>    
+                            </div>
+                        </article>
+                    {% endif %}
                 </div>
             </div>
         </div>
