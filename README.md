@@ -2,7 +2,7 @@
 
 ## app-Secrets
 
-<img src="https://github,com/Sampul-CodeMine/app-secrets/blob/main/screenshots/app_logo.png" alt="app-Secret Logo">
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/app_logo.png" alt="app-Secret Logo">
 
 <strong>app-Secrets</strong> as envisaged is an online System that will be designed for users to note or write down certain occurrences or future plans they would love to keep secret and confidential. It is a simple app meant to fulfill the portfolio project requirements for ALX Software Engineering Foundational stage and may likely be used for fun purposes.
 
@@ -100,11 +100,11 @@ As regards this project, the completed and fully functional application will be 
 
 #### Starting The Application
 
-<img src="https://github,com/Sampul-CodeMine/app-secrets/blob/main/screenshots/run_app.png" alt="Run Application Image">
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/run_app.png" alt="Run Application Image">
 
 #### Landing Page
 
-<img src="https://github,com/Sampul-CodeMine/app-secrets/blob/main/screenshots/landing_page.png" alt="Run Application Image">
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/landing_page.png" alt="Run Application Image">
 
 The landing  
 
