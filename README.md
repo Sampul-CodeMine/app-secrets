@@ -104,9 +104,34 @@ As regards this project, the completed and fully functional application will be 
 
 #### Landing Page
 
-<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/landing_page.png" alt="Run Application Image">
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/landing_page.png" alt="Application Landing Page Image">
 
-The landing  
+The landing page can be accessed only in a logged out state. When the user is logged in, his/her profile becomes the index page.
+
+#### About/Contact Page
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/about.png" alt="About Page Image">
+<br>
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/contact.png" alt="Contact Page Image">
+
+The About page and the contact page can be accessed both from the logged out scene or logged in scene.
+
+#### Signup/Signin Page
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/register.png" alt="Register Page Image">
+<br>
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/login.png" alt="Login Page Image">
+
+
+#### Authenticated Page for Logged In Users
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/logged_in.png" alt="Authenticated User Page Image">
+
+When a user is successfully authenticated and logged in, his home page becomes the profile page with a list of all his secrets. The page is paginated also to go the last of first secrets as well as scroll through the lists of secrets page after page.
+
+
+
+
 
 ---
 
