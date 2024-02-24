@@ -180,7 +180,7 @@ Feel free to reach out to me on the social media handles provided below:
 > Feel free to reach out to me on the following Social media handles displayed below. 
 >
 > #### Social Media Handles
-> [Github](https://github.com/Sampul-CodeMine) / [X](https://twitter.com/Sampul_CodeMine) / [LinkedIn](https://linkedin.com/in/dukeson-ehigboria)
+> [Github](https://github.com/Sampul-CodeMine) / [X (formally Twitter)](https://twitter.com/Sampul_CodeMine) / [LinkedIn](https://linkedin.com/in/dukeson-ehigboria)
 >
 
 
