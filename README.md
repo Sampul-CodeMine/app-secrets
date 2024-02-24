@@ -130,6 +130,14 @@ The About page and the contact page can be accessed both from the logged out sce
 When a user is successfully authenticated and logged in, his home page becomes the profile page with a list of all his secrets. The page is paginated also to go the last of first secrets as well as scroll through the lists of secrets page after page.
 
 
+#### Adding A New Secret
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/add_post.png" alt="Add Secret Image">
+<br>
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/post_added.png" alt="Secret Added Image">
+
+To add a new secret, a user clicks on the New Secret from the menu bar, a page is displayed for you to enter the details of the secrets. When your entry is complete, click on the <b>Save Secret</b> button to save the secret and it will redirect you to your profile home page with a message that post is added.
+
 
 
 
