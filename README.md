@@ -98,7 +98,9 @@ As regards this project, the completed and fully functional application will be 
 
 #### Starting The Application
 
- 
+<img src="https://github,com/Sampul-CodeMine/app-secrets/blob/main/screenshots/run_app.png" alt="Run Application Image">
+
+
 
 ---
 
