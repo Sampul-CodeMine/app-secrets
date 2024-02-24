@@ -139,6 +139,25 @@ When a user is successfully authenticated and logged in, his home page becomes t
 To add a new secret, a user clicks on the New Secret from the menu bar, a page is displayed for you to enter the details of the secrets. When your entry is complete, click on the <b>Save Secret</b> button to save the secret and it will redirect you to your profile home page with a message that post is added.
 
 
+#### Viewing Secret
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/post_details.png" alt="View Secret Image">
+
+To view the secret, you can click on the title of the newly added secrets or click on the <b>View</b> button to see the details of the secret.
+
+
+#### Modifying/Deleting A Secret
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/modify_post.png" alt="Update Secret Image">
+<br>
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/delete_post.png" alt="Delete Secret Image">
+
+#### Secrets Are Trerasured and Safe alone to the Owners
+
+Your secrets are safe with you. The superusers of the application do not have a direct access to your secrets.
+
+<img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/admin_panel.png" alt="Django Admin Panel Image">
+
 
 
 ---
