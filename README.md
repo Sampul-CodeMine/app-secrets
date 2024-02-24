@@ -186,6 +186,10 @@ Feel free to reach out to me on the social media handles provided below:
 
 ### THANK YOU
 
+
+> NOTE:
+> When you clone this repo, remember to provide a `.env` file in the root directory of the application. A format of all that is required in the `.env` file is created in a file called `sample.env`.
+
 ### License
 
 Public Domain. No copy write protection.
