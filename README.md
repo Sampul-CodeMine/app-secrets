@@ -159,13 +159,32 @@ Your secrets are safe with you. The superusers of the application do not have a 
 <img src="https://github.com/Sampul-CodeMine/app-secrets/blob/main/screenshots/admin_panel.png" alt="Django Admin Panel Image">
 
 
+### Conclusion
+
+Knowing well that there are a lot of functionalities to be added to this project which will be considered and implemented, this is just a fun app I created to keep certain of my secrets to myself. 
+
+This app is opened to critisms, corrections, ammendments and refactoring and there is no copyright protection on this project as it is just to fulfill the requirements to pass from the Foundational phase of the ALX SE programme to the Specialized phase.
+
+Feel free to reach out to me on the social media handles provided below:
 
 ---
 
-### AUTHORS
+### AUTHOR
 
-> Dukeson Ehigboria - [Github](https://github.com/Sampul-CodeMine) / [Twitter](https://twitter.com/Sampul_CodeMine)
+> #### Dukeson Ehigboria
 >
+> Dukeson is a student of the ALX Software Engineering programme hosted in Africa. I am from Nigeria and Edo State to be precised. I have always loved to be an Accountant but before I chose my specialized classes during my time at the High School days, I switched from Social Sciences to Sciences and with that choice, I have never had a dull moment learning to be a Tech Savvie. 
+>
+> ALX has really shapened the way I reason out solutions to problems. No journey without a step being taken at the initial stage. Likewise there is no success in life not backed by a thoughtful plan.
+>
+> Feel free to reach out to me on the following Social media handles displayed below. 
+>
+> #### Social Media Handles
+> [Github](https://github.com/Sampul-CodeMine) / [X](https://twitter.com/Sampul_CodeMine) / [LinkedIn](https://linkedin.com/in/dukeson-ehigboria)
+>
+
+
+### THANK YOU
 
 ### License
 
