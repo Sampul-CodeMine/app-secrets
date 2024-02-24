@@ -70,8 +70,11 @@ We have the following dependencies saved in a file called requirements.txt:
 - django-crispy-forms==2.1
 - mysqlclient==2.2.4
 - pillow==10.2.0
+- pycodestyle==2.11.1
+- python-dotenv==1.0.1
 - sqlparse==0.4.4
 - typing_extensions==4.9.0
+
 
 > this was achieved using
 >
