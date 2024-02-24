@@ -94,6 +94,11 @@ To install all these requirements do the following:
 ```
 
 ### RUNNING THE APPLICATION
+As regards this project, the completed and fully functional application will be hosted on a live server. But in the interim and at the time of writing the documentation, we will be running the application from the local or development machine and using `DEBUG = True` so as to see how the program goes
+
+#### Starting The Application
+
+ 
 
 ---
 
