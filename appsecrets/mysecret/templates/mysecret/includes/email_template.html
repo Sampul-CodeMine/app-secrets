@@ -1,0 +1,28 @@
+{% extends 'mysecret/base.html' %}
+{% block content %}
+<main role="main" id="wrapper" class="wrapper mb-4 mt-4">
+    <section class="container py-4 mt-4 mb-4" id="contact">
+        <div class="row mt-4 mb-4">
+            <div class="col-md-6 offset-md-3">
+                <div class="card mt-4 mb-4 p-3">
+                    <div class="card-header">
+                        <h2 class="text-center">Contact Message</h2>
+                    </div>
+                    <div class="card-body">            
+                 		<p class="card-text">Hello {{ admin }}!</p>
+                 		<p>You have a new message from:</p> 
+                 		<p>Name: <strong>{{ name|title }}</strong><br>
+                 		Email: {{ email }}.<p>  							
+                    </div>
+                    <p class="text-muted">The message is below:</p>
+                    <div class="card-footer">
+                    	<p class="caard-text">
+                    		{{ msg }}
+                    	</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main> 
+{% endblock %}

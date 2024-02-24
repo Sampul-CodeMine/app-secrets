@@ -27,14 +27,14 @@ body {
 #logo-img {
     width: 50px;
 }
-span#red-logo, span#blue-logo {
+span.red-logo, span.blue-logo {
     font-weight: bold;
     font-style: italics;
 }
-span#blue-logo {
+span.blue-logo {
     color: rgb(48, 65, 80);
 }
-span#red-logo {
+span.red-logo {
     color: rgb(216, 105, 36);
 }
 span#delete_secret {
@@ -42,6 +42,7 @@ span#delete_secret {
     font-weight: bold;
     color: crimson;
 }
+
 #wrapper {
     display: block;
     margin-top: 2rem !important;

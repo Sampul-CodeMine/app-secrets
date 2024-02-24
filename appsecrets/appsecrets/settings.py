@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-47@v$c)h&&a0gh*cn_9d(+n55le64i5i3j8vm=t$e#ryfh3kg='
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,3 +144,18 @@ LOGIN_REDIRECT_URL = 'profile_page'
 
 # Set the default login route for the project
 LOGIN_URL = 'sign_in'
+
+# loading variables from the environment variables set in a .env file
+dotenv_path = os.path.join(BASE_DIR, '.env')
+load_dotenv(dotenv_path)
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = os.environ.get('MAIL_SERVER')
+EMAIL_PORT = os.environ.get('MAIL_PORT')
+EMAIL_USE_TLS = os.environ.get('MAIL_TLS')
+EMAIL_HOST_USER = os.environ.get('MAIL_USERNAME')
+EMAIL_HOST_PASSWORD = os.environ.get('MAIL_PASSWORD')
+
+
+ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
